@@ -1,2 +1,2 @@
-# Dise-oweb_pagg
+# Diseñoweb_pagg
 Mi Pagina Web
