@@ -119,6 +119,7 @@ main {
   flex-shrink: 0;
 }
 
+     
 .articulo-contenido h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -266,6 +267,17 @@ button:focus {
   background-color: #3a7a4d;
   outline: none;
 }
+
+.articulo-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+    }
+
+.articulo-link:hover {
+  transform: scale(1.02);
+    }
 
 footer {
   margin-top: 2rem;
