@@ -1,23 +1,9 @@
-
-#background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Nunito', sans-serif;
   background-color: #f5efeb; 
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #2F4156;
+  color: #2f4156; 
 }
 
 .nav-wrapper {
@@ -76,18 +62,66 @@ body {
   color: #2f4156;
 }
 
-footer {
-  background-color: #2F4156;
-  color: white;
-  text-align: center;
-  padding: 10px 5px;
-  font-size: 0.9rem;
-  margin-top: 40px; 
-  position: relative;
-  z-index: 1;
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #c8d9e6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #567c8d; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2f4156;
   font-family: 'Nunito', sans-serif;
 }
 
+.about-text .email {
+  color: #567C8D; 
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+footer {
+  background-color: #2f4156; 
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 60px;
+  font-family: 'Nunito', sans-serif;
+}
 
 footer .social-icons {
   margin-top: 10px;
@@ -102,7 +136,7 @@ footer .social-icons img {
   width: 28px;
   height: 28px;
   transition: transform 0.3s ease;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); 
 }
 
 footer .social-icons a:hover {
